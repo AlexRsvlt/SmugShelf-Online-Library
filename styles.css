@@ -1,0 +1,221 @@
+/* styles.css - for SmugShelf Digital Bookshelf with Enhancements */
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+header {
+  /* background-color: #fff; */
+  background-color: #1f2937;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border-bottom: 1px solid #eee; */
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 20px;
+  animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  /* color: #2b2b2b; */
+  color: #fbd6d2;
+  font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  /* color: #333; */
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #fbd6d2;
+}
+
+header .join-btn {
+  /* background: #1f2937;
+  color: #fff; */
+  background: #fbd6d2;
+  color: #1f2937;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+header .join-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.hero {
+  background-color: #fbd6d2;
+  background-image: url(static/hero-bg5.png);
+  background-size: cover;
+  text-align: right;
+  padding: 0.2rem 1rem 17.5rem;
+  animation: fadeIn 1s ease-in-out;
+  border-radius: 20px;
+  margin-top: 0.7rem;
+  margin-left: 1rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  margin-right: 3.5rem;
+  /* font-family: Georgia, serif; */
+  font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hero p {
+  /* max-width: 600px; */
+  margin-right: 3.5rem;
+  line-height: 1.6;
+}
+
+.hero button {
+  background: #1f2937;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-right: 3.5rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.hero button:hover {
+  background: #111827;
+  transform: translateY(-2px);
+}
+
+.section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section h2::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #1f2937;
+  margin: 0.5rem auto;
+  border-radius: 2px;
+}
+
+.section p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.gallery div {
+  background: #f1f1f1;
+  padding: 2rem;
+  border-radius: 8px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.cta {
+  background-color: #fbd6d2;
+  padding: 3rem 1rem;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+footer {
+  background: #f9f9f9;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 0.9rem;
+}
+
+footer div {
+  margin: 1rem;
+  max-width: 200px;
+  transition: transform 0.2s ease;
+}
+
+footer div:hover {
+  transform: scale(1.03);
+}
+
+footer strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+button:hover {
+  opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .section h2 {
+    font-size: 1.5rem;
+  }
+}
