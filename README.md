@@ -1,7 +1,4 @@
 # SmugShelf-Online-Library
-SmugShelf is an online library platform that lets users browse, organize, and read books digitally, providing a personalized and interactive reading experience.
-
-# SmugShelf
 
 **SmugShelf** is an online library platform that lets users browse, organize, and read books digitally, providing a personalized and interactive reading experience.
 <img width="940" height="788" alt="shelf" src="https://github.com/user-attachments/assets/6ee5c2c5-3467-4bcf-8896-71be9b3d9430" />
